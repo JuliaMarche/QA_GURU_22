@@ -41,7 +41,7 @@ public class DemoFormTest {
         $("#stateCity-wrapper").$(byText("Karnal")).click();
         $("#submit").click();
 
-        $(".modal-dialog").should(text("Thanks for submitting the form"));
+        $(".modal-dialog").shouldHave(text("Thanks for submitting the form"));
         $(".modal-content").shouldHave(
                 text("Julia Ivanova"),
                 text("Ivanova@mail.com"),
